@@ -26,7 +26,8 @@ function runAsSandboxedModule(code) {
     module        : { exports : null },
     require,
     setInterval,
-    setTimeout
+    setTimeout,
+    process
   };
 
   vm.runInNewContext(code, sandbox);
